@@ -1,0 +1,1015 @@
+{
+  "name":"VMware - Cloud Foundation",
+  "namespace":"com.vmware.vcf",
+  "contentPackId":"com.vmware.vcf",
+  "framework":"#9c4",
+  "version":"2.4",
+  "extractedFields":[ {
+    "displayName":"vmw_vcf_alarm_area",
+    "preContext":"\\'area\\'\\:\\s*\\'",
+    "postContext":"\\'\\}",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv6ylsmvqq0000",
+    "constraints":"{\"searchTerms\":\"alarm\",\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_alarm_text",
+    "preContext":"title\\'\\:\\s*[\\'|\\\"]",
+    "postContext":"[\\'|\\\"]\\,\\s*\\'area",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv65dfpb2a0000",
+    "constraints":"{\"searchTerms\":\"alarm\",\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_bundle",
+    "preContext":"bundleSoftwareType\": \"",
+    "postContext":"\"\\,\\s*\\\"component\\\"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgk000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"vmware\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_bundle_downloadStatus",
+    "preContext":"downloadStatus\": \"",
+    "postContext":"\"\\,\\s*\\\"downloadStartTime\\\"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3en53w43dpmfsfg5dbor2xg000",
+    "constraints":"{\"searchTerms\":\"vmware\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_bundle_vendor",
+    "preContext":"bundleElementVendor\": \"",
+    "postContext":"\"\\,\\s*\\\"bundleElementVersion\\\"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3wmvxgi33s",
+    "constraints":"{\"searchTerms\":\"vmware\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_bundle_version",
+    "preContext":"bundleElementVersion\": \"",
+    "postContext":"\"\\,\\s*\\\"bundleElementPreviousVersion\\\"",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3wmvzhg2lpny000000",
+    "constraints":"{\"searchTerms\":\"vmware\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_component",
+    "preContext":"component\": \"",
+    "postContext":"\"\\,\\s*\\\"bundleElementVendor\\\"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwg33nobxw4zlooq000000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}],\"searchTerms\":\"vmware\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_data_center_id",
+    "preContext":"\\{\\\"id\":\"",
+    "postContext":"\"\\,\"objectTypeName\":\"Datacenter\",",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfpwgzloorsxex3jmq000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_datacenter_name",
+    "preContext":"\"objectTypeName\":\"Datacenter\",\"name\":\"",
+    "postContext":"\"\\}\\,\"clientHandle",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfrwk3tumvzf63tbnvsq0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_datastore_name",
+    "preContext":"datastoreForVmDeploymentName\": \"",
+    "postContext":"\"\\,\\s*",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfzxi33smvpw4ylnmu000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"lcm\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_domain_appliance_name",
+    "preContext":"applianceName\": \"",
+    "postContext":"\"\\,\\s*",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3bobygy2lbnzrwkx3omfwwk000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"lcm\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_domain_name",
+    "preContext":"for\\s*",
+    "postContext":"\\s*domain\\s",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3omfwwk000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"sos\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_domain_status",
+    "preContext":"is ",
+    "postContext":"$",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3torqxi5lt",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"sos\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_domain_type",
+    "preContext":"\\\"domainType\\\"\\:\\s*\\\"",
+    "postContext":"\"\\,\\s*",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3upfygk000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"lcm\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_domainmgr_inventory_task",
+    "preContext":"\\\"description\\\"\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnm000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"domainmanager-inventory-tasks\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_domainmgr_inventory_task_status",
+    "preContext":"\\\"state\\\"\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnnpxg5dbor2xg000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"domainmanager-inventory-tasks\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_domainmgr_task_error",
+    "preContext":"\\\"errors\\\"\\:\\s*\\[",
+    "postContext":"\\]\\,",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpxiyltnnpwk4tsn5za0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_dvportgroup",
+    "preContext":"DistributedVirtualPortgroup, value = ",
+    "postContext":"\\, serverGuid",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tqn5zhiz3sn52xa000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_dvportgroup_name",
+    "preContext":"value ",
+    "postContext":" server",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tqn5zhiz3sn52xax3omfwwk000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_dvs_objid",
+    "preContext":"objectId\":\"",
+    "postContext":"\"\\,\"objectTypeName\\\"\\:\\\"VmwareDistributedVirtualSwitch\\\"",
+    "regexValue":"\\w*\\-\\d*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5ttl5xwe2tjmq000000",
+    "constraints":"{\"searchTerms\":\"\",\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_dvswitch_id",
+    "preContext":"VmwareDistributedVirtualSwitch\\\"\\,\\\"vsmUuid\":\"",
+    "postContext":"\"\\,\"nodeId",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tto5uxiy3il5uwi000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_dvswitch_name",
+    "preContext":"VmwareDistributedVirtualSwitch\\\"\\}\\,\\\"name\":\"",
+    "postContext":"\"\\,\"scope",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tto5uxiy3il5xgc3lf",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_dvswitch_objId",
+    "preContext":"switchObj\\\"\\:\\{\\\"objectId\":\"",
+    "postContext":"\"\\,\"objectTypeName\\\"\\s*\\:\\s*\\\"VmwareDistributedVirtualSwitch",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tto5uxiy3il5xwe2sjmq000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_host_instanceId",
+    "preContext":"instanceId: ",
+    "postContext":"\\s*scopeId",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpws3ttorqw4y3fjfsa0000",
+    "constraints":"{\"searchTerms\":\"vmware\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_host_license",
+    "preContext":"License' \\[",
+    "postContext":"\\]\\}\\s*\\}\\, ",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpwy2ldmvxhgzi0",
+    "constraints":"{\"searchTerms\":\"vmware\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_host_services",
+    "preContext":"inUse: ",
+    "postContext":"\\s*license",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpxgzlsozuwgzlt",
+    "constraints":"{\"searchTerms\":\"vmware\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_hostname",
+    "preContext":"name: ",
+    "postContext":"\\s*version\\:",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torxgc3lf",
+    "constraints":"{\"searchTerms\":\"vmware\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_is_hybrid_host",
+    "preContext":"isHybrid ",
+    "postContext":"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpws427nb4we4tjmrpwq33toq000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_lcm_hostname",
+    "preContext":"\\\"hostName\\\"\\:\\s*\\\"",
+    "postContext":"\"\\,\\s*",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwyy3nl5ug643unzqw2zi0",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"lcm\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_license_key",
+    "preContext":"\\s*\\[",
+    "postContext":"\\]\\s*",
+    "regexValue":"\\S+\\-\\S+\\-\\S+\\-\\S+\\-\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nnsxs000",
+    "constraints":"{\"searchTerms\":\"license\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_license_name",
+    "preContext":"name: '",
+    "postContext":"'",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0",
+    "constraints":"{\"searchTerms\":\"license name\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_managed_object",
+    "preContext":"is ",
+    "postContext":"",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw2ylomftwkzc7n5rguzldoq000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"ManagedObjectReference\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_network_wld_name",
+    "preContext":"cluster ",
+    "postContext":"\\s*\\:\\s*",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw4zluo5xxe227o5wgix3omfwwk000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_package_name",
+    "preContext":"Package ",
+    "postContext":" \\S+",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxayldnnqwozk7nzqw2zi0",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_password",
+    "preContext":"password[\\\"]*\\s*:\\s*",
+    "postContext":"[\\,]*",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxaylton3w64te",
+    "constraints":"{\"searchTerms\":\"username\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_pkg_load_time",
+    "preContext":"in ",
+    "postContext":" millis",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa23hl5wg6ylel52gs3lf",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_portgroup_name",
+    "preContext":"name ",
+    "postContext":" type",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa33sortxe33vobpw4ylnmu000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_root_pwd_expiry",
+    "preContext":"(expires\\s*\\:\\s*|expiry\\'\\:\\s*\\')",
+    "postContext":"(\\'|\\s*)",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxe33porpxa53el5sxq4djoj4q0000",
+    "constraints":"{\"searchTerms\":\"root\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_root_user_pwd_last_change",
+    "preContext":"(password change\\s*\\:\\s*|\\'last_change\\'\\:\\s*\\')",
+    "postContext":"(\\'|\\s*)",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxe33porpxk43fojpxa53el5wgc43ul5rwqylom5sq0000",
+    "constraints":"{\"searchTerms\":\"root\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_sddc_hostname",
+    "preContext":"(host |\\s+Host name\\s+)",
+    "postContext":"($|\\s+)",
+    "regexValue":"(\\S+\\.\\S+\\.\\S+\\.\\S+\\.\\S+\\.\\S+|\\d+\\.\\d+\\.\\d+\\.\\d+)",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_sos_failed_tasks",
+    "preContext":"\\:\\s+",
+    "postContext":"",
+    "regexValue":"[\\'\\S+\\'\\s*\\,\\s*]*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg33tl5tgc2lmmvsf65dbonvxg000",
+    "constraints":"{\"searchTerms\":\"Failed Tasks\",\"filters\":[{\"internalName\":\"appname\",\"displayName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcf-sos\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_sos_task_status",
+    "preContext":"\\s+",
+    "postContext":" Tasks",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg33tl52gc43ll5zxiyluovzq0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"appname\",\"displayName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vcf-sos\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_stretch_cluster_hostname",
+    "preContext":"host ",
+    "postContext":" with MTU",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf62dpon2g4ylnmu000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_stretch_cluster_service",
+    "preContext":"\\[c\\.v\\.\\S+\\.",
+    "postContext":"\\,",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_stretch_cluster_task",
+    "preContext":"taskDescription\":\"",
+    "postContext":"\"\\,\"taskDescriptionPack\":\\{\"",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_stretch_cluster_task_status",
+    "preContext":"status\":\"",
+    "postContext":"\"\\,\"previousState",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_stretch_cluster_vlanid",
+    "preContext":"vlan id ",
+    "postContext":"",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65tmmfxgsza0",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_stretch_cluster_vsan_task_error_code",
+    "preContext":"errorCode\":\"",
+    "postContext":"\"\\,\"arguments",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65ttmfxf65dbonvv6zlsojxxex3dn5sgk000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_stretched_esxi_version",
+    "preContext":"Esxi compliant versions \\[",
+    "postContext":"\\]",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2dfmrpwk43ynfpxmzlsonuw63q0",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_username",
+    "preContext":"username[\\\"]*\\s*\\:\\s*",
+    "postContext":"\\,\\s*",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxk43fojxgc3lf",
+    "constraints":"{\"searchTerms\":\"password\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vdi_domain_type",
+    "preContext":"Domain Type: ",
+    "postContext":"",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxmzdjl5sg63lbnfxf65dzobsq0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"sos\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vmnic_count",
+    "preContext":"vmknicCount\":",
+    "postContext":"\\}\\}\\s*",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm3lonfrv6y3povxhi000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_capacity_disk_is_flash",
+    "preContext":"\\\"IsCapacityFlash\\\"\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwgylqmfrws5dzl5sgs43ll5uxgx3gnrqxg2a0",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_cluster_id",
+    "preContext":"cluster ",
+    "postContext":"",
+    "regexValue":"\\S+\\-\\S+\\-*\\S*\\-*\\S*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwg3dvon2gk4s7nfsa0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_datastore",
+    "preContext":"datastoreMor=",
+    "postContext":"\\, datastoreName",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwiylumfzxi33smu000000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"datastoreType=VSAN\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_datastore_free_space_MB",
+    "preContext":"freeSpace=",
+    "postContext":"\\.0",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwiylumfzxi33smvpwm4tfmvpxg4dbmnsv6tkc",
+    "constraints":"{\"searchTerms\":\"datastoreType=VSAN\",\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_disk_format_type",
+    "preContext":"\\\"FormatType\\\"\\s*\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*\\}\\,",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpwm33snvqxix3upfygk000",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_disk_is_ssd",
+    "preContext":"\\\"IsSSD\\\"\\s*\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpws427onzwi000",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_disk_name",
+    "preContext":"\\\"Name\\\"\\s*\\:\\s*\\\"\\s*",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_disk_removal_reason",
+    "preContext":"\\\"Reason\\\"\\s*\\:\\s*\\\"",
+    "postContext":"\"\\,\\s*",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxezlnn53gc3c7ojswc43pny000000",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_disk_size",
+    "preContext":"\\\"Size\\(MB\\)\"\\s*\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg2l2mu000000",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_disk_state",
+    "preContext":"\\\"State\\\"\\s*\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vsan_disk_uuid",
+    "preContext":"\\\"VSANUUID\\\"\\s*\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxk5ljmq000000",
+    "constraints":"{\"searchTerms\":\"vsan\",\"filters\":[{\"hidden\":false,\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_vxlan_install_status",
+    "preContext":"\\s*: ",
+    "postContext":"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm6dmmfxf62loon2gc3dml5zxiyluovzq0000",
+    "constraints":"{\"searchTerms\":\"\\\"vxlan installed\\\"\",\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_wld_name",
+    "preContext":"(ClusterComputeResource\\\"\\}\\,\\s*\\\"name\":\"|\\{\\}\\,\\s*\\\"name\":\")",
+    "postContext":"\"\\,\"scope\\\"\\s*\\:\\{\\S*Datacenter",
+    "regexValue":"\\S*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo3del5xgc3lf",
+    "constraints":"{\"filters\":[{\"internalName\":\"vmw_product\",\"displayName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"cluster\"}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_workflow_task_description",
+    "preContext":"\\\"description\\\"\\:\\s*\\\"",
+    "postContext":"\"\\,\\s*",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5sgk43dojuxa5djn5xa0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"domainmanager-workflows\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_workflow_task_name",
+    "preContext":"\\\"name\\\"\\:\\s*\\\"",
+    "postContext":"\"\\,\\s*",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5xgc3lf",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"domainmanager-workflows\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vcf_workflow_task_status",
+    "preContext":"\\\"status\\\"\\:\\s*\\\"",
+    "postContext":"\\\"\\,\\s*",
+    "regexValue":".*",
+    "internalName":"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5zxiyluovzq0000",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"filepath\",\"displayName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"domainmanager-workflows\",\"fieldType\":\"STRING\",\"isExtracted\":false}]}",
+    "info":null
+  } ],
+  "queries":[ ],
+  "alerts":[ {
+    "name":"VCF - Workload Domain Install Failure",
+    "info":"This alert is triggered when there is a failure in workload domain install.<br><br>To remediate the issue check the alert query details and use the Set Time Range from This Event feature in Log Insight on the failed event that triggered the alert to  find out events that occured just before and after the failure to identify the root cause of the failure.",
+    "recommendation":"To remediate the issue check the alert query details and use the Set Time Range from This Event feature in Log Insight on the failed event that triggered the alert to  find out events that occured just before and after the failure to identify the root cause of the failure.",
+    "alertType":"RATE_BASED_WITH_GROUPS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1532060056650,\"endTimeMillis\":1561980990601,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm6dmmfxf62loon2gc3dml5zxiyluovzq0000\",\"operator\":\"CONTAINS\",\"value\":\"false\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw4zluo5xxe227o5wgix3omfwwk000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_network_wld_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw4zluo5xxe227o5wgix3omfwwk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vxlan_install_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm6dmmfxf62loon2gc3dml5zxiyluovzq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_network_wld_name\",\"preContext\":\"cluster \",\"postContext\":\"\\\\s*\\\\:\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw4zluo5xxe227o5wgix3omfwwk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vxlan_install_status\",\"preContext\":\"\\\\s*: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm6dmmfxf62loon2gc3dml5zxiyluovzq0000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\\\\\"vxlan installed\\\\\\\"\\\",\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+    "messageQuery":"",
+    "hitCount":0.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"VCF - Domain Manager Task Errors",
+    "info":"This alert is triggered when Domain Manager Tasks encounter error.",
+    "recommendation":"To remediate the issue check the alert query details and use the Set Time Range from This Event feature in Log Insight on the failed event that triggered the alert to  find out events that occured just before and after the task errors occured to identify the root cause of the failure.",
+    "alertType":"RATE_BASED_WITH_GROUPS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1532060056650,\"endTimeMillis\":1561981701423,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnm000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnnpxg5dbor2xg000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpxiyltnnpwk4tsn5za0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_domainmgr_inventory_task\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnm000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_domainmgr_inventory_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnnpxg5dbor2xg000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_domainmgr_inventory_task\",\"preContext\":\"\\\\\\\"description\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnm000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"domainmanager-inventory-tasks\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domainmgr_inventory_task_status\",\"preContext\":\"\\\\\\\"state\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnnpxg5dbor2xg000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"domainmanager-inventory-tasks\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domainmgr_task_error\",\"preContext\":\"\\\\\\\"errors\\\\\\\"\\\\:\\\\s*\\\\[\",\"postContext\":\"\\\\]\\\\,\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpxiyltnnpwk4tsn5za0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+    "messageQuery":"",
+    "hitCount":0.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"VCF - Hosts not in VSAN cluster",
+    "info":"This alert is triggered when hosts are identified as not being in the VSAN cluster.",
+    "recommendation":"Recommendation - Add hosts not in the VSAN cluster to the VSAN cluster if incorrect, but if this is intended, then ignore the alert and modify alert instance query to not trigger this alert on the specific hosts that are intentionally not in the cluster,",
+    "alertType":"RATE_BASED_WITH_GROUPS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"The host is not in a vSAN cluster\"},{\"internalName\":\"hostname\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "hitCount":0.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"VCF - Freespace less than 10 GB on cluster",
+    "info":"Less than 1024 GB left on cluster.",
+    "recommendation":"Add more disk to increase free space on cluster.",
+    "alertType":"RATE_BASED_WITH_GROUPS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1561990838461,\"endTimeMillis\":1561991138460,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"cluster information,cluster\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwg3dvon2gk4s7nfsa0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsan\"},{\"internalName\":\"freespace\",\"operator\":\"LESS_OR_EQUAL\",\"value\":\"10485\"},{\"internalName\":\"capacity\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vsan_cluster_id\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwg3dvon2gk4s7nfsa0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"freespace\",\"internalName\":\"freespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"capacity\",\"internalName\":\"capacity\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vsan_cluster_id\",\"preContext\":\"cluster \",\"postContext\":\"\",\"regexValue\":\"\\\\S+\\\\-\\\\S+\\\\-*\\\\S*\\\\-*\\\\S*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwg3dvon2gk4s7nfsa0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+    "messageQuery":"",
+    "hitCount":0.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"VCF - Evaluation licenses in use",
+    "info":"This alert is triggered if there are evaluation licenses in use in a production environment.",
+    "recommendation":"Recommendation - use valid production licenses in a production environment.",
+    "alertType":"RATE_BASED_WITH_GROUPS",
+    "chartQuery":"{\"query\":\"license*\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nnsxs000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0\",\"operator\":\"CONTAINS\",\"value\":\"evaluation mode\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_license_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_license_key\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nnsxs000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_license_key\",\"preContext\":\"\\\\s*\\\\[\",\"postContext\":\"\\\\]\\\\s*\",\"regexValue\":\"\\\\S+\\\\-\\\\S+\\\\-\\\\S+\\\\-\\\\S+\\\\-\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nnsxs000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"license\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_license_name\",\"preContext\":\"name: '\",\"postContext\":\"'\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0\",\"constraints\":\"{\\\"searchTerms\\\":\\\"license name\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+    "messageQuery":"",
+    "hitCount":0.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"VMW-VCF-StretchedCluster Isolation Address is null",
+    "info":"Updated isolationAddress0 is null is seen when stretching a VCF cluster.",
+    "alertType":"RATE_BASED_WITH_GROUPS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596533069241,\"endTimeMillis\":1596533669241,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"operator\":\"CONTAINS\",\"value\":\"configurehaisolationparambuilder\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"null\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"preContext\":\"\\\\[c\\\\.v\\\\.\\\\S+\\\\.\",\"postContext\":\"\\\\,\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+    "messageQuery":"",
+    "hitCount":0.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  }, {
+    "name":"VCF - Disks not eligible for use by VSAN",
+    "info":"This alert is triggered when disks are found to be not eligible for use by VSAN.",
+    "recommendation":"Recommendation -  Add / Fix disks  in the VSAN cluster to be VSAN eligible, but if this is intended, then ignore the alert and modify alert instance query to not trigger this alert on the specific disks that are intentionally not in the eligible state to prevent further trigger of this alert,",
+    "alertType":"RATE_BASED_WITH_GROUPS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"isssd\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg2l2mu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000\",\"operator\":\"CONTAINS\",\"value\":\"ineligible for use by vsan\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vsan_disk_state\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vsan_disk_size\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg2l2mu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"preContext\":\"\\\\\\\"Name\\\\\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\\\\s*\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vsan_disk_size\",\"preContext\":\"\\\\\\\"Size\\\\(MB\\\\)\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"-?\\\\d+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg2l2mu000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vsan_disk_state\",\"preContext\":\"\\\\\\\"State\\\\\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+    "messageQuery":"",
+    "hitCount":0.0,
+    "hitOperator":"GREATER_THAN",
+    "searchPeriod":300000,
+    "searchInterval":60000
+  } ],
+  "dashboardSections":[ {
+    "views":[ {
+      "name":"VMware - VCF - Overview",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Total Events",
+          "info":"The total number of events received over time.",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"VMware VCF Bundle Download Status by Version",
+          "info":"VMware VCF Bundle Download Status by Version",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwg33nobxw4zlooq000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgk000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3wmvzhg2lpny000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3en53w43dpmfsfg5dbor2xg000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_bundle\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_bundle_version\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3wmvzhg2lpny000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_bundle_downloadStatus\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3en53w43dpmfsfg5dbor2xg000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_bundle\",\"preContext\":\"bundleSoftwareType\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\\\\\\\"component\\\\\\\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}],\\\"searchTerms\\\":\\\"vmware\\\"}\"},{\"displayName\":\"vmw_vcf_bundle_downloadStatus\",\"preContext\":\"downloadStatus\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\\\\\\\"downloadStartTime\\\\\\\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3en53w43dpmfsfg5dbor2xg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vmware\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_bundle_version\",\"preContext\":\"bundleElementVersion\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\\\\\\\"bundleElementPreviousVersion\\\\\\\"\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwe5lomrwgkx3wmvzhg2lpny000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vmware\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_component\",\"preContext\":\"component\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\\\\\\\"bundleElementVendor\\\\\\\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwg33nobxw4zlooq000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}],\\\"searchTerms\\\":\\\"vmware\\\"}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Failed SOS tasks",
+          "info":"List of Failed of SOS tasks",
+          "gridWidth":"1",
+          "chartType":"line",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg33tl5tgc2lmmvsf65dbonvxg000\",\"operator\":\"EXISTS\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"All tasks\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_sos_failed_tasks\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg33tl5tgc2lmmvsf65dbonvxg000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_sos_failed_tasks\",\"preContext\":\"\\\\:\\\\s+\",\"postContext\":\"\",\"regexValue\":\"[\\\\'\\\\S+\\\\'\\\\s*\\\\,\\\\s*]*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg33tl5tgc2lmmvsf65dbonvxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"Failed Tasks\\\",\\\"filters\\\":[{\\\"internalName\\\":\\\"appname\\\",\\\"displayName\\\":\\\"appname\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf-sos\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Alarms by datastore",
+          "info":"VCF alarms by datastore",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":true,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv6ylsmvqq0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv65dfpb2a0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_alarm_area\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv6ylsmvqq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_alarm_text\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv65dfpb2a0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_alarm_area\",\"preContext\":\"\\\\'area\\\\'\\\\:\\\\s*\\\\'\",\"postContext\":\"\\\\'\\\\}\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv6ylsmvqq0000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"alarm\\\",\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_alarm_text\",\"preContext\":\"title\\\\'\\\\:\\\\s*[\\\\'|\\\\\\\"]\",\"postContext\":\"[\\\\'|\\\\\\\"]\\\\,\\\\s*\\\\'area\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwc3dbojwv65dfpb2a0000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"alarm\\\",\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF - Package load times",
+          "info":"VCF package load time",
+          "chartType":"bar",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxayldnnqwozk7nzqw2zi0\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa23hl5wg6ylel52gs3lf\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_package_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxayldnnqwozk7nzqw2zi0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_pkg_load_time\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa23hl5wg6ylel52gs3lf\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_package_name\",\"preContext\":\"Package \",\"postContext\":\" \\\\S+\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxayldnnqwozk7nzqw2zi0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_pkg_load_time\",\"preContext\":\"in \",\"postContext\":\" millis\",\"regexValue\":\"-?\\\\d+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa23hl5wg6ylel52gs3lf\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF Hybrid hosts",
+          "info":"VCF hybrid hosts",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpws427nb4we4tjmrpwq33toq000000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_sddc_hostname\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_is_hybrid_host\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpws427nb4we4tjmrpwq33toq000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_is_hybrid_host\",\"preContext\":\"isHybrid \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpws427nb4we4tjmrpwq33toq000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_sddc_hostname\",\"preContext\":\"(host |\\\\s+Host name\\\\s+)\",\"postContext\":\"($|\\\\s+)\",\"regexValue\":\"(\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+|\\\\d+\\\\.\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Managed objects by hostname",
+          "info":"VCF managed objects by hostname",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw2ylomftwkzc7n5rguzldoq000000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_sddc_hostname\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_managed_object\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw2ylomftwkzc7n5rguzldoq000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_managed_object\",\"preContext\":\"is \",\"postContext\":\"\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw2ylomftwkzc7n5rguzldoq000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"ManagedObjectReference\\\"}\"},{\"displayName\":\"vmw_vcf_sddc_hostname\",\"preContext\":\"(host |\\\\s+Host name\\\\s+)\",\"postContext\":\"($|\\\\s+)\",\"regexValue\":\"(\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+|\\\\d+\\\\.\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF - dv portgtoups by portgroup name",
+          "info":"VCF distributed  portgroups by portgroup name",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa33sortxe33vobpw4ylnmu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tqn5zhiz3sn52xax3omfwwk000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_portgroup_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa33sortxe33vobpw4ylnmu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_dvportgroup_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tqn5zhiz3sn52xax3omfwwk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_dvportgroup_name\",\"preContext\":\"value \",\"postContext\":\" server\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi5tqn5zhiz3sn52xax3omfwwk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_portgroup_name\",\"preContext\":\"name \",\"postContext\":\" type\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxa33sortxe33vobpw4ylnmu000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"VMware - VCF - VSAN Overview",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"VCF VSAN Removed Disk Name and Size",
+          "info":"VCF VSAN Removed Disk Name , State and Size",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1530577961631,\"endTimeMillis\":1560690193847,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"isssd\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg2l2mu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vsan_disk_state\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vsan_disk_size\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg2l2mu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"preContext\":\"\\\\\\\"Name\\\\\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\\\\s*\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vsan_disk_size\",\"preContext\":\"\\\\\\\"Size\\\\(MB\\\\)\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"-?\\\\d+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg2l2mu000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vsan_disk_state\",\"preContext\":\"\\\\\\\"State\\\\\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxg5dborsq0000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Hosts NOT part of VSAN cluster",
+          "info":"Hosts that are not part of the VSAN cluster.",
+          "chartType":"column",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"The host is not in a vSAN cluster\"},{\"internalName\":\"hostname\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF VSAN Datastore capacity at a glance ( in MB )",
+          "info":"VCF VSAN Datastore capacity at a glance , freespace, used and unallocated space in MB",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwiylumfzxi33smu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"freespace\",\"operator\":\"EXISTS\"},{\"internalName\":\"capacity\",\"operator\":\"EXISTS\"},{\"internalName\":\"used\",\"operator\":\"EXISTS\"},{\"internalName\":\"unallocated\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vsan_datastore\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwiylumfzxi33smu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"capacity\",\"internalName\":\"capacity\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"freespace\",\"internalName\":\"freespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"used\",\"internalName\":\"used\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"unallocated\",\"internalName\":\"unallocated\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vsan_datastore\",\"preContext\":\"datastoreMor=\",\"postContext\":\"\\\\, datastoreName\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwiylumfzxi33smu000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"datastoreType=VSAN\\\"}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF VSAN - Removed Disk Eligibility for VSAN use",
+          "info":"VCF VSAN - Removed Disk Eligibility for VSAN reuse with reason",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560334463970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"isssd\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxezlnn53gc3c7ojswc43pny000000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vsan_disk_removal_reason\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxezlnn53gc3c7ojswc43pny000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"preContext\":\"\\\\\\\"Name\\\\\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\\\\s*\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vsan_disk_removal_reason\",\"preContext\":\"\\\\\\\"Reason\\\\\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpxezlnn53gc3c7ojswc43pny000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Datastore, Appliance, domain type",
+          "info":"VCF LCM Datastore, Appliance, domain type",
+          "gridWidth":"1",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfzxi33smvpw4ylnmu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3bobygy2lbnzrwkx3omfwwk000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3upfygk000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwyy3nl5ug643unzqw2zi0\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_datastore_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfzxi33smvpw4ylnmu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_lcm_hostname\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwyy3nl5ug643unzqw2zi0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_domain_appliance_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3bobygy2lbnzrwkx3omfwwk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_domain_type\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3upfygk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_datastore_name\",\"preContext\":\"datastoreForVmDeploymentName\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfzxi33smvpw4ylnmu000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domain_appliance_name\",\"preContext\":\"applianceName\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3bobygy2lbnzrwkx3omfwwk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domain_type\",\"preContext\":\"\\\\\\\"domainType\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3upfygk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_lcm_hostname\",\"preContext\":\"\\\\\\\"hostName\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwyy3nl5ug643unzqw2zi0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VSAN Flash Disks (or NOT )",
+          "info":"This chart shows if the VSAN disks are Flash or non-Flash",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwgylqmfrws5dzl5sgs43ll5uxgx3gnrqxg2a0\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vsan_capacity_disk_is_flash\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwgylqmfrws5dzl5sgs43ll5uxgx3gnrqxg2a0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vsan_capacity_disk_is_flash\",\"preContext\":\"\\\\\\\"IsCapacityFlash\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"-?\\\\d+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwgylqmfrws5dzl5sgs43ll5uxgx3gnrqxg2a0\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vsan_disk_name\",\"preContext\":\"\\\\\\\"Name\\\\\\\"\\\\s*\\\\:\\\\s*\\\\\\\"\\\\s*\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwi2ltnnpw4ylnmu000000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vsan\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VSAN Cluster by capacity and freespace",
+          "info":"VSAN Cluster by capacity and freespace",
+          "gridWidth":"1/2",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560179132980,\"endTimeMillis\":1561485939195,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"cluster information,cluster\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwg3dvon2gk4s7nfsa0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsan\"},{\"internalName\":\"freespace\",\"operator\":\"EXISTS\"},{\"internalName\":\"capacity\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vsan_cluster_id\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwg3dvon2gk4s7nfsa0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"freespace\",\"internalName\":\"freespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"capacity\",\"internalName\":\"capacity\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vsan_cluster_id\",\"preContext\":\"cluster \",\"postContext\":\"\",\"regexValue\":\"\\\\S+\\\\-\\\\S+\\\\-*\\\\S*\\\\-*\\\\S*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm43bnzpwg3dvon2gk4s7nfsa0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"VMware - VCF - License Overview",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"VMware host services by license",
+          "info":"VMware hosts, instanceID, enabled services with license token",
+          "gridWidth":"1",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"license*\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torxgc3lf\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpwy2ldmvxhgzi0\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpxgzlsozuwgzlt\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpws3ttorqw4y3fjfsa0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_hostname\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torxgc3lf\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_host_services\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpxgzlsozuwgzlt\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_host_instanceId\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpws3ttorqw4y3fjfsa0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_host_license\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpwy2ldmvxhgzi0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_host_instanceId\",\"preContext\":\"instanceId: \",\"postContext\":\"\\\\s*scopeId\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpws3ttorqw4y3fjfsa0000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vmware\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_host_license\",\"preContext\":\"License' \\\\[\",\"postContext\":\"\\\\]\\\\}\\\\s*\\\\}\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpwy2ldmvxhgzi0\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vmware\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_host_services\",\"preContext\":\"inUse: \",\"postContext\":\"\\\\s*license\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torpxgzlsozuwgzlt\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vmware\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_hostname\",\"preContext\":\"name: \",\"postContext\":\"\\\\s*version\\\\:\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwq33torxgc3lf\",\"constraints\":\"{\\\"searchTerms\\\":\\\"vmware\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF - License keys by type",
+          "info":"VCF individual product license keys by product type.",
+          "gridWidth":"1",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"license*\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nnsxs000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_license_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_license_key\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nnsxs000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_license_key\",\"preContext\":\"\\\\s*\\\\[\",\"postContext\":\"\\\\]\\\\s*\",\"regexValue\":\"\\\\S+\\\\-\\\\S+\\\\-\\\\S+\\\\-\\\\S+\\\\-\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nnsxs000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"license\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"},{\"displayName\":\"vmw_vcf_license_name\",\"preContext\":\"name: '\",\"postContext\":\"'\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwy2ldmvxhgzk7nzqw2zi0\",\"constraints\":\"{\\\"searchTerms\\\":\\\"license name\\\",\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"VMware - VCF - Domain Manager Overview",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"VCF Domain Manager Inventory Tasks by status",
+          "info":"VCF Domain Manager Tasks with status",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":true,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnm000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnnpxg5dbor2xg000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_domainmgr_inventory_task\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnm000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_domainmgr_inventory_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnnpxg5dbor2xg000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_domainmgr_inventory_task\",\"preContext\":\"\\\\\\\"description\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnm000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"domainmanager-inventory-tasks\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domainmgr_inventory_task_status\",\"preContext\":\"\\\\\\\"state\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw43lhojpws3twmvxhi33spfpxiyltnnpxg5dbor2xg000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"domainmanager-inventory-tasks\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF vxlan Install status by workload domain",
+          "info":"",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm6dmmfxf62loon2gc3dml5zxiyluovzq0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw4zluo5xxe227o5wgix3omfwwk000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_network_wld_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw4zluo5xxe227o5wgix3omfwwk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_vxlan_install_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm6dmmfxf62loon2gc3dml5zxiyluovzq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_network_wld_name\",\"preContext\":\"cluster \",\"postContext\":\"\\\\s*\\\\:\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpw4zluo5xxe227o5wgix3omfwwk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_vxlan_install_status\",\"preContext\":\"\\\\s*: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxm6dmmfxf62loon2gc3dml5zxiyluovzq0000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\\\\\"vxlan installed\\\\\\\"\\\",\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Domain Manager Workflow Tasks by status",
+          "info":"VCF Domain Manager Workflow tasks by status",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":true,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5sgk43dojuxa5djn5xa0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5zxiyluovzq0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_workflow_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5zxiyluovzq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_workflow_task_description\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5sgk43dojuxa5djn5xa0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_workflow_task_description\",\"preContext\":\"\\\\\\\"description\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5sgk43dojuxa5djn5xa0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"domainmanager-workflows\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_workflow_task_status\",\"preContext\":\"\\\\\\\"status\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\\\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxo33snntgy33xl52gc43ll5zxiyluovzq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"hidden\\\":false,\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"domainmanager-workflows\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF VDI Domain types",
+          "info":"VCF VDI Domain types",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxmzdjl5sg63lbnfxf65dzobsq0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_vdi_domain_type\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxmzdjl5sg63lbnfxf65dzobsq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_vdi_domain_type\",\"preContext\":\"Domain Type: \",\"postContext\":\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxmzdjl5sg63lbnfxf65dzobsq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"sos\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF Domain by Status",
+          "info":"VCF-SOS Domain name by Status",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3omfwwk000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3torqxi5lt\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_domain_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3omfwwk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_domain_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3torqxi5lt\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_domain_name\",\"preContext\":\"for\\\\s*\",\"postContext\":\"\\\\s*domain\\\\s\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3omfwwk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"sos\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domain_status\",\"preContext\":\"is \",\"postContext\":\"$\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3torqxi5lt\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"sos\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Datastore & Appliance by domain type",
+          "info":"VCF LCM Datastore, Appliance, domain type",
+          "gridWidth":"1",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1560161663970,\"endTimeMillis\":1561226611329,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfzxi33smvpw4ylnmu000000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3bobygy2lbnzrwkx3omfwwk000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3upfygk000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwyy3nl5ug643unzqw2zi0\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_datastore_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfzxi33smvpw4ylnmu000000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_lcm_hostname\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwyy3nl5ug643unzqw2zi0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_domain_appliance_name\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3bobygy2lbnzrwkx3omfwwk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_domain_type\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3upfygk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_datastore_name\",\"preContext\":\"datastoreForVmDeploymentName\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwiylumfzxi33smvpw4ylnmu000000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domain_appliance_name\",\"preContext\":\"applianceName\\\": \\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3bobygy2lbnzrwkx3omfwwk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_domain_type\",\"preContext\":\"\\\\\\\"domainType\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwi33nmfuw4x3upfygk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_lcm_hostname\",\"preContext\":\"\\\\\\\"hostName\\\\\\\"\\\\:\\\\s*\\\\\\\"\",\"postContext\":\"\\\"\\\\,\\\\s*\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpwyy3nl5ug643unzqw2zi0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"filepath\\\",\\\"displayName\\\":\\\"filepath\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"lcm\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"VMware -SDDC Manager Stretched Cluster Overview",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Stretched Cluster Queries",
+          "info":"Queries for Stretched Cluster events as they happening during stretching the cluster from sddc manager",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"list",
+          "listType":"query",
+          "listData":[ {
+            "name":"StretchedClusterEventLog",
+            "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596191018263,\"endTimeMillis\":1596194618262,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretched_esxi_version\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2dfmrpwk43ynfpxmzlsonuw63q0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretched_esxi_version\",\"preContext\":\"Esxi compliant versions \\\\[\",\"postContext\":\"\\\\]\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2dfmrpwk43ynfpxmzlsonuw63q0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+            "messageQuery":"",
+            "info":"Query for Stretched Cluster events as they happening during stretching the cluster from sddc manager",
+            "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+          }, {
+            "name":"StretchedClusterValidatorEventsLog",
+            "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596191608531,\"endTimeMillis\":1596195208530,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchclustervalidator\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretched_esxi_version\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2dfmrpwk43ynfpxmzlsonuw63q0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretched_esxi_version\",\"preContext\":\"Esxi compliant versions \\\\[\",\"postContext\":\"\\\\]\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2dfmrpwk43ynfpxmzlsonuw63q0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+            "messageQuery":"",
+            "info":"Query for Stretched Cluster validator events as they happening during stretching the cluster from sddc manager",
+            "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+          }, {
+            "name":"VCF Stretched Cluster failure events",
+            "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596166727280,\"endTimeMillis\":1596208046199,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"completed_with_failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"preContext\":\"taskDescription\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"taskDescriptionPack\\\":\\\\{\\\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"preContext\":\"status\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"previousState\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+            "messageQuery":"",
+            "info":"Failure events when stretching VCF cluster",
+            "options":"{\"chartTypeName\":\"bubble\",\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"doublegroupbymultiseries\\\":true,\\\"legend\\\":true,\\\"swapfields\\\":false,\\\"doublegroupbystacking\\\":\\\"none\\\",\\\"pielabelstyle\\\":\\\"legend\\\",\\\"piepercentage\\\":false,\\\"piestyle\\\":\\\"normal\\\"}\"}"
+          }, {
+            "name":"VCF Stretched Cluster VSAN failed events",
+            "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596166727280,\"endTimeMillis\":1596208046199,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"completed_with_failure\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsan*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"preContext\":\"taskDescription\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"taskDescriptionPack\\\":\\\\{\\\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"preContext\":\"status\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"previousState\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+            "messageQuery":"",
+            "info":"VCF Stretched Cluster VSAN failed events",
+            "options":"{\"chartTypeName\":\"bubble\",\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"doublegroupbymultiseries\\\":true,\\\"legend\\\":true,\\\"swapfields\\\":false,\\\"doublegroupbystacking\\\":\\\"none\\\",\\\"pielabelstyle\\\":\\\"legend\\\",\\\"piepercentage\\\":false,\\\"piestyle\\\":\\\"normal\\\"}\"}"
+          }, {
+            "name":"VCF Stretched Cluster VSAN failed events by Error Code",
+            "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596166727280,\"endTimeMillis\":1596208046199,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsan*\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"operator\":\"CONTAINS\",\"value\":\"completed_with_failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_stretch_cluster_vsan_task_error_code\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65ttmfxf65dbonvv6zlsojxxex3dn5sgk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"preContext\":\"status\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"previousState\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_vsan_task_error_code\",\"preContext\":\"errorCode\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"arguments\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65ttmfxf65dbonvv6zlsojxxex3dn5sgk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+            "messageQuery":"",
+            "info":"VCF Stretched Cluster VSAN failed events by Error Code",
+            "options":"{\"chartTypeName\":\"bubble\",\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"doublegroupbymultiseries\\\":true,\\\"legend\\\":true,\\\"swapfields\\\":false,\\\"doublegroupbystacking\\\":\\\"none\\\",\\\"pielabelstyle\\\":\\\"legend\\\",\\\"piepercentage\\\":false,\\\"piestyle\\\":\\\"normal\\\"}\"}"
+          } ]
+        }, {
+          "name":"VCF Stretched Cluster events",
+          "info":"VCF Stretched Cluster events with status",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596166727280,\"endTimeMillis\":1596208046199,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"preContext\":\"taskDescription\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"taskDescriptionPack\\\":\\\\{\\\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"preContext\":\"status\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"previousState\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Stretched Cluster VSAN events",
+          "info":"VCF Stretched Cluster VSAN events by task status",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596166727280,\"endTimeMillis\":1596208046199,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsan*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"preContext\":\"taskDescription\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"taskDescriptionPack\\\":\\\\{\\\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"preContext\":\"status\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"previousState\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF Stretched Cluster VSAN failed events by Error Code",
+          "info":"VCF Stretched Cluster VSAN failed events by Error Code",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596166727280,\"endTimeMillis\":1596208046199,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vsan*\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"operator\":\"CONTAINS\",\"value\":\"completed_with_failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_stretch_cluster_vsan_task_error_code\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65ttmfxf65dbonvv6zlsojxxex3dn5sgk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"preContext\":\"status\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"previousState\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_vsan_task_error_code\",\"preContext\":\"errorCode\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"arguments\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65ttmfxf65dbonvv6zlsojxxex3dn5sgk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Stretched Cluster Witness events by Error Code",
+          "info":"VCF Stretched Cluster Witness events by Error Code",
+          "gridWidth":"1/2",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":true,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596166727280,\"endTimeMillis\":1596208046199,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"stretchcluster*\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"operator\":\"EXISTS\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"witness*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcf_stretch_cluster_vsan_task_error_code\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65ttmfxf65dbonvv6zlsojxxex3dn5sgk000\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_task\",\"preContext\":\"taskDescription\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"taskDescriptionPack\\\":\\\\{\\\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_task_status\",\"preContext\":\"status\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"previousState\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65dbonvv643umf2hk4y0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vcf_stretch_cluster_vsan_task_error_code\",\"preContext\":\"errorCode\\\":\\\"\",\"postContext\":\"\\\"\\\\,\\\"arguments\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf65ttmfxf65dbonvv6zlsojxxex3dn5sgk000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF Stretch Cluster Errors",
+          "info":"Errors by task when stretching VCF cluster.",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596533069241,\"endTimeMillis\":1596533669241,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"operator\":\"EXISTS\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"error\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"preContext\":\"\\\\[c\\\\.v\\\\.\\\\S+\\\\.\",\"postContext\":\"\\\\,\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF Stretch Cluster vmkping Errors",
+          "info":"vmkping Errors by task when stretching VCF cluster.",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596533069241,\"endTimeMillis\":1596533669241,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"error\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vmkping*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"preContext\":\"\\\\[c\\\\.v\\\\.\\\\S+\\\\.\",\"postContext\":\"\\\\,\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Unique Count of Stretched Cluster Hosts",
+          "info":"Unique Count of Stretched Cluster Hosts",
+          "gridWidth":"1/2",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1590816884698,\"endTimeMillis\":1596538270362,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"displayName\":\"vmw_vcf_sddc_hostname\",\"displayNamespace\":\"VMware - Cloud Foundation\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false},\"piqlFunctionField\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"host\"},{\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_sddc_hostname\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_sddc_hostname\",\"preContext\":\"(host |\\\\s+Host name\\\\s+)\",\"postContext\":\"($|\\\\s+)\",\"regexValue\":\"(\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+\\\\.\\\\S+|\\\\d+\\\\.\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxgzdemnpwq33torxgc3lf\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VCF - Primary Availability Zone Tasks",
+          "info":"VCF - Primary Availability Zone Tasks",
+          "gridWidth":"1/2",
+          "chartType":"column",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1596087284698,\"endTimeMillis\":1596482617689,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"primary\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"zone\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"preContext\":\"\\\\[c\\\\.v\\\\.\\\\S+\\\\.\",\"postContext\":\"\\\\,\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"VCF - Secondary Availability Zone Tasks",
+          "info":"VCF - Secondary&nbsp;Availability Zone Tasks",
+          "gridWidth":"1/2",
+          "chartType":"column",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1590816884698,\"endTimeMillis\":1596543481566,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"vmw_product\",\"operator\":\"CONTAINS\",\"value\":\"vcf\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"secondary\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"zone\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"displayNamespace\":\"VMware - Cloud Foundation\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vcf_stretch_cluster_service\",\"preContext\":\"\\\\[c\\\\.v\\\\.\\\\S+\\\\.\",\"postContext\":\"\\\\,\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7mnxw2ltwnv3wc4tffz3ggztwnv3v65tdmzpxg5dsmv2gg2c7mnwhk43umvzf643foj3gsy3f\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vmw_product\\\",\\\"displayName\\\":\\\"vmw_product\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vcf\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    } ],
+    "header":""
+  } ],
+  "aliasFields":[ ],
+  "aliasRules":[ ],
+  "author":"VMware - Yogita Patil",
+  "url":"https://www.vmware.com/products/cloud-foundation.html",
+  "contentVersion":"1.5",
+  "info":"This is version 1.5 of the VMware VCF content pack .<br><br>Supported product versions:<br><br>vRLI v4.0 +<br>VCF 3.7+",
+  "instructions":"Edit the liagent.ini of the vRLI agent on the VCF appliance<br>Change the hostname to the vRLI appliance FQDN or IP<br>[Optional] Send all logs to a dedicated VIP with tag vmw_product = vcf<br><span>Happy Monitoring your VCF environment!!<br></span><br>Alternatively the vcf liagent.ini should look like this - (Note: Depending on VCF version you maz need to edit the log location or event_marker in some cases)<br><br><div>; VMware LogInsight Agent configuration is adapted to SDDC Manager VM logging needs. Do not modify it.</div><br><div>[server]</div><div>; Hostname or IP address of your Log Insight server / cluster load balancer. Default:</div><div>hostname=vrli.lab.local</div><br><div>; Protocol can be cfapi (Log Insight REST API), syslog. Default:</div><div>proto=cfapi</div><br><div>; Log Insight server port to connect to. Default ports for protocols (all TCP):</div><div>; syslog: 514; syslog with ssl: 6514; cfapi: 9000; cfapi with ssl: 9543. Default:</div><div>port=9000</div><br><div>; SSL usage. Default:</div><div>;ssl=no</div><div>; Example of configuration with trusted CA:</div><div>ssl=no</div><div>;ssl_ca_path=/etc/pki/tls/certs/ca.pem</div><br><div>; Time in minutes to force reconnection to the server.</div><div>; This option mitigates imbalances caused by long-lived TCP connections. Default:</div><div>;reconnect=30</div><br><div>[logging]</div><div>; Logging verbosity: 0 (no debug messages), 1 (essentials), 2 (verbose with more impact on performance).</div><div>; This option should always be 0 under normal operating conditions. Default:</div><div>debug_level=0</div><br><div>[storage]</div><div>; Max local storage usage limit (data + logs) in MBs. Valid range: 100-2000 MB.</div><div>;max_disk_buffer=200</div><br><div>; Uncomment the appropriate section to collect system logs</div><div>; The recommended way is to enable the Linux content pack from LI server</div><div>;[filelog|syslog]</div><div>;directory=/var/log</div><div>;include=messages;messages.?;syslog;syslog.?</div><br><div>[update]</div><div>; Do not change this parameter</div><div>package_type=bin</div><br><br><div>; Enable automatic update of the agent. If enabled:</div><div>; the agent will silently check for updates from the server and</div><div>; if available will automatically download and apply the update.</div><div>;auto_update=yes</div><br><div>[filelog|lighttpd]</div><div>directory=/opt/vmware/var/log/lighttpd</div><div>include=access.log;error.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"lighttpd\"}</div><br><div>[filelog|vami]</div><div>directory=/opt/vmware/var/log/vami</div><div>include=vami-ovf.log;vami.log;vami-sfcb.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"vami\"}</div><br><div>[filelog|sddc-support]</div><div>directory=/opt/vmware/sddc-support</div><div>include=compile.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"sddc-support\"}</div><br><div>[filelog|cassandra]</div><div>directory=/var/opt/cassandra/logs</div><div>include=system.log;debug.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"cassandra\"}</div><br><div>[filelog|loginsight-agent]</div><div>directory=/var/log/loginsight-agent</div><div>include=liagent*.log;liupdater*.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"loginsight-agent\"}</div><br><div>[filelog|vmware-network]</div><div>directory=/var/log</div><div>include=vmware-network.*;*.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"vmware-network\"}</div><br><div>[filelog|audit]</div><div>directory=/var/log/audit</div><div>include=audit.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"audit\"}</div><br><div>[filelog|sddc-manager-ui-app]</div><div>directory=/var/log/vmware/vcf/sddc-manager-ui-app</div><div>include=*.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"sddc-manager-ui-app\"}</div><br><div>[filelog|lcm]</div><div>directory=/var/log/vmware/vcf/lcm</div><div>include=*.log</div><div>event_marker=\\n\\s*\\{\\,*</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"lcm\"}</div><div>parser=lcm_debug_parser</div><br><div>[parser|lcm_debug_parser]</div><div>base_parser=kvp</div><div>fields=*</div><br><div>[filelog|domainmanager]</div><div>directory=/var/log/vmware/vcf/domainmanager</div><div>include=domainmanager-events.log;domainmanager.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\",\"vcf_component\":\"domainmanager\"}</div><br><div>[filelog|operationsmanager]</div><div>directory=/var/log/vmware/vcf/operationsmanager</div><div>include=vcf-operationsmanager.*;operationsmanager.log;*.log</div><div>parser=clf_parser</div><div>tags={\"vmw_product\":\"vcf\",\"vcf_component\":\"operationsmanager\"}</div><br><div>[parser|clf_parser]</div><div>base_parser=clf</div><div>format=%{%Y-%m-%dT%H:%M:%S%f%z}t %E [%i] [%i] %M</div><div>field_decoder={\"log_message\":\"vcf_operationsmanager_vsan_decoder\"}</div><br><div>[parser | vcf_operationsmanager_vsan_decoder]</div><div>base_parser=kvp</div><div>debug=yes</div><div>fields=*</div><br><div>[filelog|commonsvcs]</div><div>directory=/var/log/vmware/vcf/commonsvcs</div><div>include=vcf-commonsvcs.*;*.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"commonsvcs\"}</div><br><div>[filelog|vmware-vmsvc]</div><div>directory=/var/log</div><div>include=vmware-vmsvc.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"vmware-vmsvc\"}</div><br><div>[filelog|auth]</div><div>directory=/var/log</div><div>include=auth.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"auth\"}</div><br><div>[filelog|sos]</div><div>directory=/var/log</div><div>include=sos.log</div><div>event_marker=^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}</div><div>tags={\"vmw_product\":\"vcf\", \"vcf_component\":\"sos\"}</div>",
+  "upgradeInstructions":"Changelog: v1.5<br><ul><li>Support for stretched VCF domain<br></li><li>Improved setup instructions</li></ul>",
+  "icon":"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"
+}
